@@ -95,7 +95,7 @@ def optimize_model(model):
             model.graph.node.insert(i, new_node)
     return model
 
-onnxfile = "D:\work\models\pytorch\PyTorch-ENet/artosyn_Enet_onnx.onnx"
+onnxfile = "D:\work\models\pytorch\PyTorch-ENet/Enet_onnx.onnx"
 onnx_model = onnx.load(onnxfile)
 print("step1...")
 # delete shape->gather->unsequeeze ops and replace maxunpool op
